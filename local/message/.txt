@@ -1,0 +1,12 @@
+بعد از ساخت ورژن دات پی اچ پی 
+این دستور رو زد تا پلاگین نصب شود
+php admin/cli/upgrade.php
+
+بعد از نوشتن کد با این دستور کش رو پاک کرد
+php admin/cli/purge_caches.php
+
+بعد از اینکه پلاگین را نصب کردیم و پایگاه داده ی پلاگین را نوشته 
+با این دستور آن را حذف می کنیم و و دوباره نصب می کنیم تا پایگاه داده ثبت شود
+php admin/cli/uninstall_plugins.php --plugins=local_message --run
+و با دستور زیر دوباره نصب می کنیم
+php admin/cli/upgrade.php
